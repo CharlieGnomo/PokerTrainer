@@ -12,8 +12,8 @@ package pokertrainer;
  */
 public class Card {
     
-    private Suit suit;
-    private Value val;
+    private final Suit suit;
+    private final Value val;
     
     
     public Card(Suit suit, Value val) {
@@ -30,7 +30,9 @@ public class Card {
         return this.val;
     }
     
+    @Override
     public String toString(){
         return (this.val.getVal() + this.suit.getName());
     }
 }
+

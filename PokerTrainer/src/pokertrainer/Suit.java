@@ -15,7 +15,7 @@ public enum Suit {
     HEARTS("h"), DIAMONDS("d"), CLUBS("c"), SPADES("s");
 
     
-    private String name;
+    private final String name;
     
     private Suit(String name) {
         this.name = name;
